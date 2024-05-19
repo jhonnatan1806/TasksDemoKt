@@ -7,7 +7,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.jhaner.taskdemo.ui.theme.TaskDaoImpl
 import kotlinx.coroutines.launch
 
 // TaskViewModel <- clase que extiende de AndroidViewModel y se utiliza para manejar la lógica de negocio de la aplicación

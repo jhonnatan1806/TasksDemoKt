@@ -22,7 +22,7 @@ class TaskDaoImpl(context: Context) : TaskDao {
         // mutableListOf <- crea una lista mutable(modificable) vacia
         val tasks = mutableListOf<Task>()
         while (cursor.moveToNext()) {
-            // TODO: 1. Crear un objeto Task con los datos del cursor y agregarlo a la lista tasks
+            // TODO: 2. Crear un objeto Task con los datos del cursor y agregarlo a la lista tasks
             // ej. val new_user = User(age = cursor.getInt(cursor.getColumnIndexOrThrow(TaskDatabaseHelper.COLUMN_AGE)), ...)
             // ej. users.add(new_user) <- agrega un objeto a la lista
             // COMPLETAR AQUI
@@ -39,7 +39,7 @@ class TaskDaoImpl(context: Context) : TaskDao {
         // ContentValues <- objeto que almacena pares clave-valor
         // ContentValues.put(key, value) <- agrega un par clave-valor al objeto
         val values = ContentValues().apply {
-            // TODO: 2. Agregar los valores de la tarea al objeto values
+            // TODO: 3. Agregar los valores de la tarea al objeto values
             // ej. put(UserDatabaseHelper.COLUMN_NAME, user.name)
             // COMPLETAR AQUI
             
@@ -52,7 +52,7 @@ class TaskDaoImpl(context: Context) : TaskDao {
 
     override suspend fun update(task: Task) {
         val values = ContentValues().apply {
-            // TODO: 3. Actualizar los valores de la tarea en la base de datos
+            // TODO: 4. Actualizar los valores de la tarea en la base de datos
             // ej. put(UserDatabaseHelper.COLUMN_NAME, user.name)
             // COMPLETAR AQUI
             
